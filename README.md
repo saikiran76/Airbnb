@@ -37,8 +37,3 @@ Welcome to our Airbnb project - an exceptional end-to-end application that mirro
 - **Dotenv:** `$npm install dotenv`
 - **Mapbox API:** Explore the [Mapbox API Documentation](https://docs.mapbox.com/api/) for integration details.
 
-## Contributors
-- **[Your Name]**
-- **[Your Email]**
-
-We welcome contributions and feedback to further enhance our Airbnb project. Thank you for considering our application as a showcase of innovation and excellence in web development. Let's redefine the standard together! 🚀
