@@ -1,0 +1,54 @@
+// const { title } = require('process');
+// const { listingSchema } = require("./schema.js");
+// const { reviewSchema } = require("./schema.js");
+// const Review = require('./models/review.js')
+
+
+
+
+// app.all("*", (req, res, next)=>{
+//     next(new ExpressError("Page Not Found", 404));
+// })
+
+// app.all("*", (req, res, next) => {
+//     next(new ExpressError("Page Not Found"));
+// });
+// app.all("*", (req, res, next) => {
+//     const err = new ExpressError("Page Not Found");
+    
+//     // Log the status code before throwing the error
+//     console.log('Status Code before throwing:', err.statusCode);
+    
+//     next(err);
+// });
+
+
+// app.use((err, req, res, next) => {
+//     console.log('Error handler middleware reached:', err);
+
+//     // Check if the status code is a number
+//     if (typeof err.statusCode === 'number') {
+//         console.log('Status Code:', err.statusCode);
+//         res.status(err.statusCode).render("./listings/Error.ejs", { err });
+//     } else {
+//         console.log('Status Code is not a number:', err.statusCode);
+//         res.status(500).render("./listings/Error.ejs", { err });
+//     }
+// });
+// app.use((err, req, res, next) => {
+//     console.log('Error handler middleware reached:', err);
+
+//     // Use the status method to set the HTTP response status
+//     res.status(err.statusCode || 500).render("./listings/Error.ejs", { err });
+// });
+
+
+// app.all("*", (req, res, next) => {
+//     // Set the status code when creating an instance of ExpressError
+//     const err = new ExpressError("Page Not Found", 404);
+    
+//     // Log the status code before throwing the error
+//     console.log('Status Code before throwing:', err.statusCode);
+    
+//     // next(err);
+// });
