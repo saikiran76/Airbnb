@@ -1,4 +1,4 @@
-# 🏠 Airbnb Project Portfolio Readme 🌟
+# ✈️🏡 Airbnb Project 🌟
 
 ## Project Overview
 Welcome to our Airbnb project - an exceptional end-to-end application that mirrors the renowned features of Airbnb. From exploring listings to adding new ones as authorized users, our application boasts a stunning user interface coupled with robust authentication functionalities. Leveraging the Mapbox API for seamless geocoding, our project is a testament to innovation and user-centric design.
