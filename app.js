@@ -112,7 +112,7 @@ app.use('/listings', reviews);
 app.use('/', userRoutes); // user route middleware
 
 app.get('/', (req, res)=>{
-    res.send('This is Airbnb');
+    res.redirect('/listings');;
 })
 
 
