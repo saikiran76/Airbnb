@@ -6,6 +6,13 @@ body{
     background-color: #222222;
 }
 
+a{
+    text-decoration: none;
+}
+
+p{
+    text-decoration: none;
+}
 .container{
     flex: 1;
 
@@ -64,13 +71,17 @@ body{
 }
 
 .f-info-links a:hover{
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: #650808;
 }
 
 /* cards */
 .listing-card{
     border: none !important;
+    height: 18rem;
+
+.list-link{
+    text-decoration: none;
 }
 
 .card-img-top{
@@ -84,6 +95,7 @@ body{
 }
 .card-text{
     font-weight: 400 !important;
+    text-decoration: none;
 }
 .listing-link{
     text-decoration: none;

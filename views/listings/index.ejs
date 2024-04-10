@@ -5,6 +5,7 @@
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
+        /* overflow: scroll; */
     }
     .filter {
         text-align: center;
@@ -80,15 +81,15 @@
         <div class="tax-toggle">
             <div class="form-check-reverse form-switch">
                 <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">Dishplay Total After Taxes</label>
+                <label class="form-check-label" for="flexSwitchCheckDefault">Display Total After Taxes</label>
             </div>
         </div>
     </div>
     <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1" >
         <% for(let list of allListings) { %>
-            <a href="/listings/<%= list.id %>" class="list-link">
-                <div class="card col listing-card" >
-                    <img src="<%= list.image.url %>" class="card-img-top" style="height: 20rem;" alt="listings-img">
+            <a href="/listings/<%= list.id %>" class="list-link" style="text-decoration: none;">
+                <div class="card col listing-card" style="height: 400px">
+                    <img src="<%= list.image.url %>" class="car d-img-top" style="height: 20rem;" alt="listings-img">
                     <div class="card-img-overlay"></div>
                     <div class="card-body">
                     <p class="card-text"><b><%= list.title %></b>
