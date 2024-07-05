@@ -32,10 +32,11 @@ module.exports.isOwner = async (req, res, next) =>{
 }
 
 module.exports.validateListing = ((req, res, next) => {
+    console.log("Validation started")
     let {error} = ListingSchema.validate(req.body);
     if(error) {
         let errMsg = error.details.map((el) => el.message).join(",");
-        throw new ExError(400, errMsg);
+        throw new Error(400, errMsg);
     }
     else {
         next();

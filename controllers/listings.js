@@ -12,7 +12,7 @@ module.exports.renderNewForm = (req, res) => {
     res.render("listings/new.ejs");
 };
 
-module.exports.showListing = async (req, res) => {
+module.exports.showListing = async (req, res, next) => {
     let { id } = req.params;
     const listing = await Listing.findById(id)
         .populate({ path: "reviews", 
@@ -22,6 +22,7 @@ module.exports.showListing = async (req, res) => {
         req.flash("error", "Listing Your Requested For Does Not Exist !");
         res.redirect("/listings") 
     }
+    console.log(listing)
     res.render("listings/show.ejs", { listing });
 };
 
@@ -38,8 +39,9 @@ module.exports.createListing = async (req, res) => {
     newListing.owner = req.user._id; 
     newListing.image = { url, filename };
     newListing.geometry = response.body.features[0].geometry;
+    console.log("Nelist geometryZ:", newListing.geometry)
     let geoData = await newListing.save();
-    console.log(geoData);
+    console.log("Geometric data of the location:", geoData);
     req.flash("success", "New Listing Created!"); 
     res.redirect("/listings");
 };

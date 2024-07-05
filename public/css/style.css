@@ -1,118 +1,40 @@
-body{
-    font-family: 'Plus Jakarta Sans', sans-serif !important;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: #222222;
+    color: #ffffff;
 }
 
-a{
-    text-decoration: none;
+.container {
+    padding: 20px;
 }
 
-p{
-    text-decoration: none;
-}
-.container{
-    flex: 1;
-
-}
-.navbar{
-    height: 5rem;
-    background-color: #222222;
+.card {
+    background: #333;
+    border: none;
 }
 
-/* .navbar-brand{ */
-.fa-compass{
-    color: #fe424d;
-    font-size: 2rem;
+.card-img-top {
+    height: auto;
+    object-fit: cover;
 }
 
-.nav-link{
-    color: #222222 !important;
+.btn {
+    margin-top: 10px;
 }
 
-/* Footer */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 10px;
+    }
 
-.f-info-socials i{
-    font-size: 1rem;
-    /* width: 100%; */
-    margin: 1em 0 0 0.5em;
-    
+    .btn {
+        width: 100%;
+        margin-top: 5px;
+    }
 }
 
-.f-info{
-    text-align: center;
-    height: 8rem;
-    display: flex;
-    background-color: #ebebeb;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: space-evenly;
-}
-
-.f-info-links, 
-.f-info-brand{
+/* Map responsiveness */
+#map {
     width: 100%;
-    vertical-align: middle; 
-    align-items: center; 
-    justify-content: center;
-    
-}
-
-.f-info-socials i{
-    margin-right: 1rem;
-    
-}
-
-.f-info-links a{
-    text-decoration: none;
-    color: #222222;
-}
-
-.f-info-links a:hover{
-    /* text-decoration: underline; */
-    color: #650808;
-}
-
-/* cards */
-.listing-card{
-    border: none !important;
-    height: 18rem;
-
-.list-link{
-    text-decoration: none;
-}
-
-.card-img-top{
-    border-radius: 1rem;
-    width: 100% !important;
-    object-fit: cover !important;
-}
-
-.card-body{
-    padding: 0 !important;
-}
-.card-text{
-    font-weight: 400 !important;
-    text-decoration: none;
-}
-.listing-link{
-    text-decoration: none;
-}
-
-/* Card Effect */
-.card-img-overlay:hover{
-    opacity: 0.2;
-    background-color: #fff;
-
-
-}
-
-.show-img{
-    height: 30vh;
-}
-
-.btns{
-    display: flex;
+    height: 300px; /* Adjust height based on your preference */
 }

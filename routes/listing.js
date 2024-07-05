@@ -16,7 +16,7 @@ router
 
 
 // Create New Page Route ↓
-router.get("/new", isLoggedIn, listingController.renderNewForm );
+router.get("/new", isLoggedIn, listingController.renderNewForm, listingController.createListing );
 
 
 // Listing Show with Reviews, Listing Update and Listing Delete Route using (router.route) ↓
