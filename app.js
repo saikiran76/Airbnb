@@ -31,7 +31,7 @@ const reviews = require('./routes/review.js');
 
 const port = 4000;
 // const Mongo_url = "mongodb://127.0.0.1:27017/Airbnb";
-const dbUrl = process.env.MONGO_URL;
+const dbUrl = "mongodb+srv://korada:Koradatech76105@initial.duq9qjd.mongodb.net/sample_mflix?retryWrites=true&w=majority&appName=initial";
 
 main()
  .then(() => {
